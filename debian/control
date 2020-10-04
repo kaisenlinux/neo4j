@@ -1,0 +1,18 @@
+Source: neo4j
+Section: database
+Priority: optional
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Build-Depends: debhelper
+Standards-Version: 4.5.0
+Homepage: https://neo4j.com/
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/neo4j.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/neo4j
+
+Package: neo4j
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, default-jre
+Description: Graph database Neo4j Server Community Edition
+ This package contains Neo4j Community Edition. It's a highly scalable, native
+ graph database purpose-built to leverage not only data but also its
+ relationships. Neo4j runs as a server application, exposing a Web-based
+ management interface and RESTful endpoints for data access.

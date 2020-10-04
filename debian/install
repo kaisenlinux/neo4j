@@ -1,0 +1,6 @@
+bin usr/share/neo4j
+lib usr/share/neo4j
+logs usr/share/neo4j
+run usr/share/neo4j
+conf/neo4j.conf etc/neo4j
+debian/neo4j-launch/* usr/sbin

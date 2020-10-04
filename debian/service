@@ -1,0 +1,19 @@
+[Unit]
+Description="Neo4j - Graph for everyone"
+Requires=network-online.target
+After=network-online.target
+ConditionFileNotEmpty=/etc/neo4j/neo4j.conf
+
+[Service]
+Type=Forking
+User=root
+Group=root
+ExecStart=/usr/sbin/neo4j start
+ExecRestart=/usr/sbin/neo4j restart
+ExecStop=/usr/sbin/neo4j stop
+RemainAfterExit=no
+Restart=on-abort
+PIDFile=/usr/share/neo4j/run/neo4j.pid
+
+[Install]
+WantedBy=multi-user.target
