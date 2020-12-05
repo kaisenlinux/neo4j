@@ -25,10 +25,13 @@ Apache Software License, Version 2.0
   Apache Commons BeanUtils
   Apache Commons Collections
   Apache Commons Compress
+  Apache Commons Exec
   Apache Commons IO
   Apache Commons Lang
   Apache Commons Logging
   Apache Commons Text
+  Apache Log4j API
+  Apache Log4j Core
   Apache Shiro :: Cache
   Apache Shiro :: Configuration :: Core
   Apache Shiro :: Configuration :: OGDL
@@ -1339,8 +1342,8 @@ Eclipse Distribution License - v 1.0
   Extended StAX API
   fastinfoset
   istack common utility code runtime
-  jakarta.xml.bind-api
-  JavaBeans Activation Framework
+  Jakarta Activation
+  Jakarta XML Binding API
   JavaBeans Activation Framework API jar
   JAXB Runtime
   jersey-container-servlet
