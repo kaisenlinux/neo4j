@@ -1,3 +1,9 @@
+neo4j (4.2.3-1kaisen1) kaisen-packages; urgency=medium
+
+  * Update to 4.2.3
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 31 Jan 2021 17:10:37 +0200
+
 neo4j (4.2.1-1kaisen1) kaisen-packages; urgency=medium
 
   * Update to 4.2.1
