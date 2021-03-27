@@ -1,7 +1,7 @@
 Source: neo4j
 Section: database
 Priority: optional
-Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Build-Depends: debhelper
 Standards-Version: 4.5.0
 Homepage: https://neo4j.com/
