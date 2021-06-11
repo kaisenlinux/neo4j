@@ -1,7 +1,7 @@
-Neo4j 4.2.6
+Neo4j 4.2.7
 =======================================
 
-Welcome to Neo4j release 4.2.6, a high-performance graph database.
+Welcome to Neo4j release 4.2.7, a high-performance graph database.
 This is the community distribution of Neo4j, including everything you need to
 start building applications that can model, persist and explore graph-like data.
 
