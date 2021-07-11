@@ -68,7 +68,6 @@ Apache Software License, Version 2.0
   jersey-core-common
   jersey-core-server
   jersey-inject-hk2
-  jersey-media-jaxb
   Jettison
   Jetty :: Http Utility
   Jetty :: IO Utility
@@ -85,6 +84,8 @@ Apache Software License, Version 2.0
   Lucene Core
   Lucene Memory
   Lucene QueryParsers
+  magnolia
+  mercator
   neo4j-driver
   Netty/All-in-One
   Non-Blocking Reactive Foundation for the JVM
@@ -958,15 +959,12 @@ Eclipse Distribution License - v 1.0
   Extended StAX API
   fastinfoset
   istack common utility code runtime
-  Jakarta Activation
-  Jakarta XML Binding API
   JavaBeans Activation Framework API jar
   JAXB Runtime
   jersey-container-servlet
   jersey-container-servlet-core
   jersey-core-client
   jersey-inject-hk2
-  jersey-media-jaxb
   TXW2 Runtime
 ------------------------------------------------------------------------------
 
@@ -1079,7 +1077,6 @@ Eclipse Public License v2.0
   jersey-core-common
   jersey-core-server
   jersey-inject-hk2
-  jersey-media-jaxb
   ServiceLocator Default Implementation
 ------------------------------------------------------------------------------
 
@@ -2368,7 +2365,6 @@ MIT License
   jersey-container-servlet-core
   jersey-core-client
   jersey-inject-hk2
-  jersey-media-jaxb
   js-tokens
   jsbn
   json-schema-traverse
@@ -2579,7 +2575,6 @@ Unlicense
   jersey-core-client
   jersey-core-common
   jersey-inject-hk2
-  jersey-media-jaxb
   tweetnacl
 ------------------------------------------------------------------------------
 
@@ -2660,13 +2655,6 @@ jersey-core-server
   Eclipse Public License v2.0
 
 jersey-inject-hk2
-  Apache Software License, Version 2.0
-  Eclipse Distribution License - v 1.0
-  Eclipse Public License v2.0
-  MIT License
-  Unlicense
-
-jersey-media-jaxb
   Apache Software License, Version 2.0
   Eclipse Distribution License - v 1.0
   Eclipse Public License v2.0
