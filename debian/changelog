@@ -1,3 +1,10 @@
+neo4j (4.3.3-1kaisen) kaisen-packages; urgency=medium
+
+  * Update to 4.3.3
+  * Update Standards-Version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 18 Aug 2021 21:45:53 +0200
+
 neo4j (4.3.2-1kaisen) kaisen-packages; urgency=medium
 
   * Update to 4.3.2
