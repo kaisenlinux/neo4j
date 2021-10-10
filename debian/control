@@ -3,7 +3,7 @@ Section: database
 Priority: optional
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Build-Depends: debhelper
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Homepage: https://neo4j.com/
 Vcs-Git: https://gitlab.com/kaisenlinux/packages/neo4j.git
 Vcs-Browser: https://gitlab.com/kaisenlinux/packages/neo4j
