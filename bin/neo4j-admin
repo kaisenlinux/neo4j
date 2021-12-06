@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # Copyright (c) "Neo4j"
 # Neo4j Sweden AB [http://neo4j.com]
 #
@@ -117,7 +117,7 @@ if $cygwin; then
   [ -n "$REPO" ] && REPO=`cygpath --path --windows "$REPO"`
 fi
 
-exec "$JAVACMD" $JAVA_OPTS -Xmx128m \
+exec "$JAVACMD" -Xmx128m \
   -classpath "$CLASSPATH" \
   -Dapp.name="neo4j-admin" \
   -Dapp.pid="$$" \
