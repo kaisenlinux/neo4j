@@ -1,8 +1,14 @@
+neo4j (4.4.3-1kaisen) kaisen-packages; urgency=medium
+
+  * Import 4.4.3 version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 23 Jan 2022 18:19:14 +0100
+
 neo4j (4.4.2-1kaisen) kaisen-packages; urgency=medium
 
   * Import 4.4.2 version
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 09 Jan 2021 03:27:53 +0100
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 09 Jan 2022 03:27:53 +0100
 
 neo4j (4.4.0-1kaisen) kaisen-packages; urgency=medium
 
