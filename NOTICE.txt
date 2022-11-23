@@ -47,12 +47,19 @@ Apache Software License, Version 2.0
   Apache Commons BeanUtils
   Apache Commons Collections
   Apache Commons Compress
+  Apache Commons Configuration
   Apache Commons IO
   Apache Commons Lang
   Apache Commons Logging
+  Apache Commons Math
   Apache Commons Text
   Apache Log4j API
   Apache Log4j Core
+  Apache Log4j Layout for JSON template
+  Apache Lucene (module: backward-codecs)
+  Apache Lucene (module: common)
+  Apache Lucene (module: core)
+  Apache Lucene (module: queryparser)
   Apache Shiro :: Cache
   Apache Shiro :: Configuration :: Core
   Apache Shiro :: Configuration :: OGDL
@@ -81,7 +88,7 @@ Apache Software License, Version 2.0
   Jackson-JAXRS: base
   Jackson-JAXRS: JSON
   Jakarta Bean Validation API
-  Java Agent for Memory Measurements
+  jansi
   Java Concurrency Tools Core Library
   Java Native Access
   Javassist
@@ -103,12 +110,10 @@ Apache Software License, Version 2.0
   jPowerShell
   jProcesses
   long
-  Lucene Common Analyzers
-  Lucene Core
-  Lucene Memory
-  Lucene QueryParsers
+  LZ4 and xxHash
   magnolia
   mercator
+  Neo4j Java Driver
   neo4j-driver
   Netty/Buffer
   Netty/Codec
@@ -118,17 +123,17 @@ Apache Software License, Version 2.0
   Netty/Resolver
   Netty/Transport
   Netty/Transport/Classes/Epoll
+  Netty/Transport/Classes/KQueue
   Netty/Transport/Native/Epoll
+  Netty/Transport/Native/KQueue
   Netty/Transport/Native/Unix/Common
   Non-Blocking Reactive Foundation for the JVM
   oauth-sign
-  parboiled-core
-  parboiled-scala
-  picocli - a mighty tiny Command Line Interface
+  picocli
   protobufjs
   request
   rxjs
-  Scala Compiler
+  Scala Reflect
   tslib
   tunnel-agent
   WMI4Java
@@ -151,6 +156,9 @@ BSD License
   hoek
   hoist-non-react-statics
   ieee754
+  JLine JANSI Terminal
+  JLine Reader
+  JLine Terminal
   json-schema
   node-pre-gyp
   qs
@@ -165,17 +173,9 @@ BSD License 2-clause
   uri-js
   zstd-jni
 
-Bouncy Castle License
-  Bouncy Castle ASN.1 Extension and Utility APIs
-  Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs
-  Bouncy Castle Provider
-
 Common Development and Distribution License Version 1.1
   Java Servlet API
   jaxb-api
-
-Creative Commons 0
-  reactive-streams
 
 Eclipse Distribution License - v 1.0
   Eclipse Collections API
@@ -211,7 +211,21 @@ Eclipse Public License v2.0
   ServiceLocator Default Implementation
 
 GNU General Public License, version 2 with the Classpath Exception
+  HK2 API module
+  HK2 Implementation Utilities
+  Jakarta Annotations API
+  jakarta.ws.rs-api
   Java Servlet API
+  javax.inject:1 as OSGi bundle
+  javax.ws.rs-api
+  jaxb-api
+  jersey-container-servlet
+  jersey-container-servlet-core
+  jersey-core-client
+  jersey-core-common
+  jersey-core-server
+  jersey-inject-hk2
+  ServiceLocator Default Implementation
 
 ISC
   abbrev
@@ -252,6 +266,7 @@ ISC
 MIT License
   ajv
   ansi-regex
+  argparse4j
   asap
   ascii-data-table
   asn1
@@ -402,6 +417,12 @@ MIT License
   xmlhttprequest
   yargs
 
+MIT No Attribution License
+  reactive-streams
+
+Mozilla Public License, Version 2.0
+  kiama
+
 SIL OFL 1.1
   Font Awesome
   Inconsolata Font
@@ -426,18 +447,51 @@ Eclipse Collections Main Library
   Eclipse Distribution License - v 1.0
   Eclipse Public License - v 1.0
 
+HK2 API module
+  Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
+
+HK2 Implementation Utilities
+  Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
+
+Jakarta Annotations API
+  Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
+
 Java Servlet API
   Common Development and Distribution License Version 1.1
+  GNU General Public License, version 2 with the Classpath Exception
+
+ServiceLocator Default Implementation
+  Eclipse Public License v2.0
   GNU General Public License, version 2 with the Classpath Exception
 
 fastinfoset
   Apache Software License, Version 2.0
   Eclipse Distribution License - v 1.0
 
+jakarta.ws.rs-api
+  Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
+
+javax.inject:1 as OSGi bundle
+  Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
+
+javax.ws.rs-api
+  Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
+
+jaxb-api
+  Common Development and Distribution License Version 1.1
+  GNU General Public License, version 2 with the Classpath Exception
+
 jersey-container-servlet
   Apache Software License, Version 2.0
   Eclipse Distribution License - v 1.0
   Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
   MIT License
   Unlicense
 
@@ -445,6 +499,7 @@ jersey-container-servlet-core
   Apache Software License, Version 2.0
   Eclipse Distribution License - v 1.0
   Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
   MIT License
   Unlicense
 
@@ -452,22 +507,26 @@ jersey-core-client
   Apache Software License, Version 2.0
   Eclipse Distribution License - v 1.0
   Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
   MIT License
   Unlicense
 
 jersey-core-common
   Apache Software License, Version 2.0
   Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
   Unlicense
 
 jersey-core-server
   Apache Software License, Version 2.0
   Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
 
 jersey-inject-hk2
   Apache Software License, Version 2.0
   Eclipse Distribution License - v 1.0
   Eclipse Public License v2.0
+  GNU General Public License, version 2 with the Classpath Exception
   MIT License
   Unlicense
 
