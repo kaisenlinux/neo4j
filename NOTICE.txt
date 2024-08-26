@@ -1,6 +1,6 @@
 Neo4j
-Copyright © 2002-2018 Neo4j Sweden AB (referred to in this notice as "Neo4j")
-[http://neo4j.com]
+Copyright © 2002-2023 Neo4j Sweden AB (referred to in this notice as "Neo4j")
+[https://neo4j.com]
 
 This product includes software ("Software") developed by Neo4j.
 
@@ -44,14 +44,12 @@ Apache Software License, Version 2.0
   @firebase/storage-types
   @firebase/util
   @firebase/webchannel-wrapper
-  Apache Commons BeanUtils
-  Apache Commons Collections
+  Apache Commons Codec
   Apache Commons Compress
   Apache Commons Configuration
   Apache Commons IO
   Apache Commons Lang
   Apache Commons Logging
-  Apache Commons Math
   Apache Commons Text
   Apache Log4j API
   Apache Log4j Core
@@ -62,13 +60,16 @@ Apache Software License, Version 2.0
   Apache Lucene (module: queryparser)
   Apache Shiro :: Cache
   Apache Shiro :: Configuration :: Core
-  Apache Shiro :: Configuration :: OGDL
   Apache Shiro :: Core
   Apache Shiro :: Cryptography :: Ciphers
   Apache Shiro :: Cryptography :: Core
   Apache Shiro :: Cryptography :: Hashing
   Apache Shiro :: Event
   Apache Shiro :: Lang
+  Arrow Flight Core
+  Arrow Format
+  Arrow Memory - Core
+  Arrow Vectors
   ascli
   aws-sign2
   bytebuffer
@@ -77,10 +78,22 @@ Apache Software License, Version 2.0
   detect-libc
   disposables
   fastinfoset
+  FindBugs-jsr305
   firebase
+  FlatBuffers Java API
   forever-agent
   grpc
+  Guava InternalFutureFailureAccess and InternalFutures
+  Guava ListenableFuture only
+  Guava: Google Core Libraries for Java
+  io.grpc:grpc-api
+  io.grpc:grpc-context
+  io.grpc:grpc-core
+  io.grpc:grpc-netty
+  io.grpc:grpc-protobuf
+  io.grpc:grpc-stub
   IPAddress
+  Jackson datatype: JSR310
   Jackson module: Old JAXB Annotations (javax.xml.bind)
   Jackson-annotations
   Jackson-core
@@ -99,10 +112,16 @@ Apache Software License, Version 2.0
   jersey-core-server
   jersey-inject-hk2
   Jettison
+  Jetty :: ALPN :: JDK9 Server Implementation
+  Jetty :: ALPN :: Server
   Jetty :: Http Utility
+  Jetty :: HTTP2 :: Common
+  Jetty :: HTTP2 :: HPACK
+  Jetty :: HTTP2 :: Server
   Jetty :: IO Utility
   Jetty :: Security
   Jetty :: Server Core
+  Jetty :: Servlet API and Schemas for JPMS and OSGi
   Jetty :: Servlet Handling
   Jetty :: Utilities
   Jetty :: Webapp Application Support
@@ -110,14 +129,13 @@ Apache Software License, Version 2.0
   jPowerShell
   jProcesses
   long
-  LZ4 and xxHash
   magnolia
-  mercator
   Neo4j Java Driver
   neo4j-driver
   Netty/Buffer
   Netty/Codec
   Netty/Codec/HTTP
+  Netty/Codec/HTTP2
   Netty/Common
   Netty/Handler
   Netty/Resolver
@@ -130,10 +148,12 @@ Apache Software License, Version 2.0
   Non-Blocking Reactive Foundation for the JVM
   oauth-sign
   picocli
+  proto-google-common-protos
   protobufjs
   request
   rxjs
   Scala Reflect
+  scala-collection-contrib
   tslib
   tunnel-agent
   WMI4Java
@@ -142,6 +162,7 @@ BSD - Scala License
   Scala Library
 
 BSD License
+  ANTLR 4 Runtime
   antlr4
   asm
   asm-analysis
@@ -161,6 +182,8 @@ BSD License
   JLine Terminal
   json-schema
   node-pre-gyp
+  Protocol Buffers [Core]
+  Protocol Buffers [Util]
   qs
   react-dnd
   react-dnd-html5-backend
@@ -172,9 +195,6 @@ BSD License 2-clause
   tar-pack
   uri-js
   zstd-jni
-
-Common Development and Distribution License Version 1.1
-  Java Servlet API
 
 Eclipse Distribution License - v 1.0
   Eclipse Collections API
@@ -214,7 +234,6 @@ GNU General Public License, version 2 with the Classpath Exception
   HK2 Implementation Utilities
   Jakarta Annotations API
   jakarta.ws.rs-api
-  Java Servlet API
   javax.inject:1 as OSGi bundle
   jersey-container-servlet
   jersey-container-servlet-core
@@ -386,7 +405,6 @@ MIT License
   save-as
   setimmediate
   SLF4J API Module
-  SLF4J NOP Binding
   sshpk
   string-width
   string_decoder
@@ -454,10 +472,6 @@ HK2 Implementation Utilities
 
 Jakarta Annotations API
   Eclipse Public License v2.0
-  GNU General Public License, version 2 with the Classpath Exception
-
-Java Servlet API
-  Common Development and Distribution License Version 1.1
   GNU General Public License, version 2 with the Classpath Exception
 
 ServiceLocator Default Implementation
