@@ -159,6 +159,7 @@ function _complete_neo4j-admin() {
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} database" ];    then _picocli_neo4j-admin; return $?; fi
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} dbms" ];    then _picocli_neo4j-admin; return $?; fi
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} server" ];    then _picocli_neo4j-admin; return $?; fi
+  if [ "${COMP_LINE}" = "${COMP_WORDS[0]} backup" ];    then _picocli_neo4j-admin; return $?; fi
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} database help" ];    then _picocli_neo4j-admin_database; return $?; fi
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} database -h" ];    then _picocli_neo4j-admin_database; return $?; fi
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} database --help" ];    then _picocli_neo4j-admin_database; return $?; fi
@@ -189,6 +190,9 @@ function _complete_neo4j-admin() {
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} server stop" ];    then _picocli_neo4j-admin_server; return $?; fi
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} server unbind" ];    then _picocli_neo4j-admin_server; return $?; fi
   if [ "${COMP_LINE}" = "${COMP_WORDS[0]} server validate-config" ];    then _picocli_neo4j-admin_server; return $?; fi
+  if [ "${COMP_LINE}" = "${COMP_WORDS[0]} backup help" ];    then _picocli_neo4j-admin_backup; return $?; fi
+  if [ "${COMP_LINE}" = "${COMP_WORDS[0]} backup -h" ];    then _picocli_neo4j-admin_backup; return $?; fi
+  if [ "${COMP_LINE}" = "${COMP_WORDS[0]} backup --help" ];    then _picocli_neo4j-admin_backup; return $?; fi
 
   # Find the longest sequence of subcommands and call the bash function for that subcommand.
   local cmds0=(version)
@@ -196,67 +200,75 @@ function _complete_neo4j-admin() {
   local cmds2=(database)
   local cmds3=(dbms)
   local cmds4=(server)
-  local cmds5=(database help)
-  local cmds6=(database -h)
-  local cmds7=(database --help)
-  local cmds8=(database check)
-  local cmds9=(database dump)
-  local cmds10=(database import)
-  local cmds11=(database info)
-  local cmds12=(database load)
-  local cmds13=(database migrate)
-  local cmds14=(database upload)
-  local cmds15=(database import full)
-  local cmds16=(database import help)
-  local cmds17=(dbms help)
-  local cmds18=(dbms -h)
-  local cmds19=(dbms --help)
-  local cmds20=(dbms set-default-admin)
-  local cmds21=(dbms set-initial-password)
-  local cmds22=(server help)
-  local cmds23=(server -h)
-  local cmds24=(server --help)
-  local cmds25=(server console)
-  local cmds26=(server memory-recommendation)
-  local cmds27=(server migrate-configuration)
-  local cmds28=(server report)
-  local cmds29=(server restart)
-  local cmds30=(server start)
-  local cmds31=(server status)
-  local cmds32=(server stop)
-  local cmds33=(server unbind)
-  local cmds34=(server validate-config)
+  local cmds5=(backup)
+  local cmds6=(database help)
+  local cmds7=(database -h)
+  local cmds8=(database --help)
+  local cmds9=(database check)
+  local cmds10=(database dump)
+  local cmds11=(database import)
+  local cmds12=(database info)
+  local cmds13=(database load)
+  local cmds14=(database migrate)
+  local cmds15=(database upload)
+  local cmds16=(database import full)
+  local cmds17=(database import help)
+  local cmds18=(dbms help)
+  local cmds19=(dbms -h)
+  local cmds20=(dbms --help)
+  local cmds21=(dbms set-default-admin)
+  local cmds22=(dbms set-initial-password)
+  local cmds23=(server help)
+  local cmds24=(server -h)
+  local cmds25=(server --help)
+  local cmds26=(server console)
+  local cmds27=(server memory-recommendation)
+  local cmds28=(server migrate-configuration)
+  local cmds29=(server report)
+  local cmds30=(server restart)
+  local cmds31=(server start)
+  local cmds32=(server status)
+  local cmds33=(server stop)
+  local cmds34=(server unbind)
+  local cmds35=(server validate-config)
+  local cmds36=(backup help)
+  local cmds37=(backup -h)
+  local cmds38=(backup --help)
 
-  if CompWordsContainsArray "${cmds34[@]}"; then _picocli_neo4j-admin_server_validateconfig; return $?; fi
-  if CompWordsContainsArray "${cmds33[@]}"; then _picocli_neo4j-admin_server_unbind; return $?; fi
-  if CompWordsContainsArray "${cmds32[@]}"; then _picocli_neo4j-admin_server_stop; return $?; fi
-  if CompWordsContainsArray "${cmds31[@]}"; then _picocli_neo4j-admin_server_status; return $?; fi
-  if CompWordsContainsArray "${cmds30[@]}"; then _picocli_neo4j-admin_server_start; return $?; fi
-  if CompWordsContainsArray "${cmds29[@]}"; then _picocli_neo4j-admin_server_restart; return $?; fi
-  if CompWordsContainsArray "${cmds28[@]}"; then _picocli_neo4j-admin_server_report; return $?; fi
-  if CompWordsContainsArray "${cmds27[@]}"; then _picocli_neo4j-admin_server_migrateconfiguration; return $?; fi
-  if CompWordsContainsArray "${cmds26[@]}"; then _picocli_neo4j-admin_server_memoryrecommendation; return $?; fi
-  if CompWordsContainsArray "${cmds25[@]}"; then _picocli_neo4j-admin_server_console; return $?; fi
-  if CompWordsContainsArray "${cmds24[@]}"; then _picocli_neo4j-admin_server_help; return $?; fi
-  if CompWordsContainsArray "${cmds23[@]}"; then _picocli_neo4j-admin_server_h; return $?; fi
-  if CompWordsContainsArray "${cmds22[@]}"; then _picocli_neo4j-admin_server_help; return $?; fi
-  if CompWordsContainsArray "${cmds21[@]}"; then _picocli_neo4j-admin_dbms_setinitialpassword; return $?; fi
-  if CompWordsContainsArray "${cmds20[@]}"; then _picocli_neo4j-admin_dbms_setdefaultadmin; return $?; fi
-  if CompWordsContainsArray "${cmds19[@]}"; then _picocli_neo4j-admin_dbms_help; return $?; fi
-  if CompWordsContainsArray "${cmds18[@]}"; then _picocli_neo4j-admin_dbms_h; return $?; fi
-  if CompWordsContainsArray "${cmds17[@]}"; then _picocli_neo4j-admin_dbms_help; return $?; fi
-  if CompWordsContainsArray "${cmds16[@]}"; then _picocli_neo4j-admin_database_import_help; return $?; fi
-  if CompWordsContainsArray "${cmds15[@]}"; then _picocli_neo4j-admin_database_import_full; return $?; fi
-  if CompWordsContainsArray "${cmds14[@]}"; then _picocli_neo4j-admin_database_upload; return $?; fi
-  if CompWordsContainsArray "${cmds13[@]}"; then _picocli_neo4j-admin_database_migrate; return $?; fi
-  if CompWordsContainsArray "${cmds12[@]}"; then _picocli_neo4j-admin_database_load; return $?; fi
-  if CompWordsContainsArray "${cmds11[@]}"; then _picocli_neo4j-admin_database_info; return $?; fi
-  if CompWordsContainsArray "${cmds10[@]}"; then _picocli_neo4j-admin_database_import; return $?; fi
-  if CompWordsContainsArray "${cmds9[@]}"; then _picocli_neo4j-admin_database_dump; return $?; fi
-  if CompWordsContainsArray "${cmds8[@]}"; then _picocli_neo4j-admin_database_check; return $?; fi
-  if CompWordsContainsArray "${cmds7[@]}"; then _picocli_neo4j-admin_database_help; return $?; fi
-  if CompWordsContainsArray "${cmds6[@]}"; then _picocli_neo4j-admin_database_h; return $?; fi
-  if CompWordsContainsArray "${cmds5[@]}"; then _picocli_neo4j-admin_database_help; return $?; fi
+  if CompWordsContainsArray "${cmds38[@]}"; then _picocli_neo4j-admin_backup_help; return $?; fi
+  if CompWordsContainsArray "${cmds37[@]}"; then _picocli_neo4j-admin_backup_h; return $?; fi
+  if CompWordsContainsArray "${cmds36[@]}"; then _picocli_neo4j-admin_backup_help; return $?; fi
+  if CompWordsContainsArray "${cmds35[@]}"; then _picocli_neo4j-admin_server_validateconfig; return $?; fi
+  if CompWordsContainsArray "${cmds34[@]}"; then _picocli_neo4j-admin_server_unbind; return $?; fi
+  if CompWordsContainsArray "${cmds33[@]}"; then _picocli_neo4j-admin_server_stop; return $?; fi
+  if CompWordsContainsArray "${cmds32[@]}"; then _picocli_neo4j-admin_server_status; return $?; fi
+  if CompWordsContainsArray "${cmds31[@]}"; then _picocli_neo4j-admin_server_start; return $?; fi
+  if CompWordsContainsArray "${cmds30[@]}"; then _picocli_neo4j-admin_server_restart; return $?; fi
+  if CompWordsContainsArray "${cmds29[@]}"; then _picocli_neo4j-admin_server_report; return $?; fi
+  if CompWordsContainsArray "${cmds28[@]}"; then _picocli_neo4j-admin_server_migrateconfiguration; return $?; fi
+  if CompWordsContainsArray "${cmds27[@]}"; then _picocli_neo4j-admin_server_memoryrecommendation; return $?; fi
+  if CompWordsContainsArray "${cmds26[@]}"; then _picocli_neo4j-admin_server_console; return $?; fi
+  if CompWordsContainsArray "${cmds25[@]}"; then _picocli_neo4j-admin_server_help; return $?; fi
+  if CompWordsContainsArray "${cmds24[@]}"; then _picocli_neo4j-admin_server_h; return $?; fi
+  if CompWordsContainsArray "${cmds23[@]}"; then _picocli_neo4j-admin_server_help; return $?; fi
+  if CompWordsContainsArray "${cmds22[@]}"; then _picocli_neo4j-admin_dbms_setinitialpassword; return $?; fi
+  if CompWordsContainsArray "${cmds21[@]}"; then _picocli_neo4j-admin_dbms_setdefaultadmin; return $?; fi
+  if CompWordsContainsArray "${cmds20[@]}"; then _picocli_neo4j-admin_dbms_help; return $?; fi
+  if CompWordsContainsArray "${cmds19[@]}"; then _picocli_neo4j-admin_dbms_h; return $?; fi
+  if CompWordsContainsArray "${cmds18[@]}"; then _picocli_neo4j-admin_dbms_help; return $?; fi
+  if CompWordsContainsArray "${cmds17[@]}"; then _picocli_neo4j-admin_database_import_help; return $?; fi
+  if CompWordsContainsArray "${cmds16[@]}"; then _picocli_neo4j-admin_database_import_full; return $?; fi
+  if CompWordsContainsArray "${cmds15[@]}"; then _picocli_neo4j-admin_database_upload; return $?; fi
+  if CompWordsContainsArray "${cmds14[@]}"; then _picocli_neo4j-admin_database_migrate; return $?; fi
+  if CompWordsContainsArray "${cmds13[@]}"; then _picocli_neo4j-admin_database_load; return $?; fi
+  if CompWordsContainsArray "${cmds12[@]}"; then _picocli_neo4j-admin_database_info; return $?; fi
+  if CompWordsContainsArray "${cmds11[@]}"; then _picocli_neo4j-admin_database_import; return $?; fi
+  if CompWordsContainsArray "${cmds10[@]}"; then _picocli_neo4j-admin_database_dump; return $?; fi
+  if CompWordsContainsArray "${cmds9[@]}"; then _picocli_neo4j-admin_database_check; return $?; fi
+  if CompWordsContainsArray "${cmds8[@]}"; then _picocli_neo4j-admin_database_help; return $?; fi
+  if CompWordsContainsArray "${cmds7[@]}"; then _picocli_neo4j-admin_database_h; return $?; fi
+  if CompWordsContainsArray "${cmds6[@]}"; then _picocli_neo4j-admin_database_help; return $?; fi
+  if CompWordsContainsArray "${cmds5[@]}"; then _picocli_neo4j-admin_backup; return $?; fi
   if CompWordsContainsArray "${cmds4[@]}"; then _picocli_neo4j-admin_server; return $?; fi
   if CompWordsContainsArray "${cmds3[@]}"; then _picocli_neo4j-admin_dbms; return $?; fi
   if CompWordsContainsArray "${cmds2[@]}"; then _picocli_neo4j-admin_database; return $?; fi
@@ -272,7 +284,7 @@ function _picocli_neo4j-admin() {
   # Get completion data
   local curr_word=${COMP_WORDS[COMP_CWORD]}
 
-  local commands="version help database dbms server"
+  local commands="version help database dbms server backup"
   local flag_opts="--expand-commands --verbose -h --help -V --version"
   local arg_opts=""
 
@@ -308,7 +320,7 @@ function _picocli_neo4j-admin_help() {
   # Get completion data
   local curr_word=${COMP_WORDS[COMP_CWORD]}
 
-  local commands="version database dbms server"
+  local commands="version database dbms server backup"
   local flag_opts="-h --help"
   local arg_opts=""
 
@@ -363,6 +375,24 @@ function _picocli_neo4j-admin_server() {
   local curr_word=${COMP_WORDS[COMP_CWORD]}
 
   local commands="help -h --help console memory-recommendation migrate-configuration report restart start status stop unbind validate-config"
+  local flag_opts=""
+  local arg_opts=""
+
+  if [[ "${curr_word}" == -* ]]; then
+    COMPREPLY=( $(compgen -W "${flag_opts} ${arg_opts}" -- "${curr_word}") )
+  else
+    local positionals=""
+    local IFS=$'\n'
+    COMPREPLY=( $(compgen -W "${commands// /$'\n'}${IFS}${positionals}" -- "${curr_word}") )
+  fi
+}
+
+# Generates completions for the options and subcommands of the `backup` subcommand.
+function _picocli_neo4j-admin_backup() {
+  # Get completion data
+  local curr_word=${COMP_WORDS[COMP_CWORD]}
+
+  local commands="help -h --help"
   local flag_opts=""
   local arg_opts=""
 
@@ -703,15 +733,23 @@ function _picocli_neo4j-admin_database_import_full() {
   local prev_word=${COMP_WORDS[COMP_CWORD-1]}
 
   local commands=""
-  local flag_opts="--verbose -h --help --expand-commands --ignore-extra-columns --multiline-fields --ignore-empty-strings --trim-strings --legacy-style-quoting --skip-bad-entries-logging --skip-bad-relationships --strict --skip-duplicate-nodes --normalize-types --auto-skip-subsequent-headers --overwrite-destination"
-  local arg_opts="--additional-config --report-file --id-type --input-encoding --delimiter --array-delimiter --quote --read-buffer-size --max-off-heap-memory --high-parallel-io --threads --bad-tolerance --nodes --relationships --format"
+  local flag_opts="--verbose -h --help --expand-commands --ignore-extra-columns --ignore-empty-strings --trim-strings --legacy-style-quoting --skip-bad-entries-logging --skip-bad-relationships --strict --skip-duplicate-nodes --normalize-types --auto-skip-subsequent-headers --overwrite-destination"
+  local arg_opts="--additional-config --schema --report-file --id-type --input-encoding --multiline-fields --multiline-fields-format --delimiter --array-delimiter --quote --read-buffer-size --max-off-heap-memory --high-parallel-io --threads --bad-tolerance --nodes --relationships --input-type --format"
   local stringintegeractual_option_args=("STRING" "INTEGER" "ACTUAL") # --id-type values
+  local v1v2_option_args=("V1" "V2") # --multiline-fields-format values
   local onoffauto_option_args=("ON" "OFF" "AUTO") # --high-parallel-io values
+  local csvparquet_option_args=("CSV" "PARQUET") # --input-type values
 
   type compopt &>/dev/null && compopt +o default
 
   case ${prev_word} in
     --additional-config)
+      local IFS=$'\n'
+      type compopt &>/dev/null && compopt -o filenames
+      COMPREPLY=( $( compgen -f -- "${curr_word}" ) ) # files
+      return $?
+      ;;
+    --schema)
       local IFS=$'\n'
       type compopt &>/dev/null && compopt -o filenames
       COMPREPLY=( $( compgen -f -- "${curr_word}" ) ) # files
@@ -730,6 +768,14 @@ function _picocli_neo4j-admin_database_import_full() {
       ;;
     --input-encoding)
       return
+      ;;
+    --multiline-fields)
+      return
+      ;;
+    --multiline-fields-format)
+      local IFS=$'\n'
+      COMPREPLY=( $( compReplyArray "${v1v2_option_args[@]}" ) )
+      return $?
       ;;
     --delimiter)
       return
@@ -762,6 +808,11 @@ function _picocli_neo4j-admin_database_import_full() {
       ;;
     --relationships)
       return
+      ;;
+    --input-type)
+      local IFS=$'\n'
+      COMPREPLY=( $( compReplyArray "${csvparquet_option_args[@]}" ) )
+      return $?
       ;;
     --format)
       return
@@ -1216,6 +1267,60 @@ function _picocli_neo4j-admin_server_validateconfig() {
 
   local commands=""
   local flag_opts="--verbose -h --help --expand-commands"
+  local arg_opts=""
+
+  if [[ "${curr_word}" == -* ]]; then
+    COMPREPLY=( $(compgen -W "${flag_opts} ${arg_opts}" -- "${curr_word}") )
+  else
+    local positionals=""
+    local IFS=$'\n'
+    COMPREPLY=( $(compgen -W "${commands// /$'\n'}${IFS}${positionals}" -- "${curr_word}") )
+  fi
+}
+
+# Generates completions for the options and subcommands of the `help` subcommand.
+function _picocli_neo4j-admin_backup_help() {
+  # Get completion data
+  local curr_word=${COMP_WORDS[COMP_CWORD]}
+
+  local commands=""
+  local flag_opts="-h --help"
+  local arg_opts=""
+
+  if [[ "${curr_word}" == -* ]]; then
+    COMPREPLY=( $(compgen -W "${flag_opts} ${arg_opts}" -- "${curr_word}") )
+  else
+    local positionals=""
+    local IFS=$'\n'
+    COMPREPLY=( $(compgen -W "${commands// /$'\n'}${IFS}${positionals}" -- "${curr_word}") )
+  fi
+}
+
+# Generates completions for the options and subcommands of the `-h` subcommand.
+function _picocli_neo4j-admin_backup_h() {
+  # Get completion data
+  local curr_word=${COMP_WORDS[COMP_CWORD]}
+
+  local commands=""
+  local flag_opts="-h --help"
+  local arg_opts=""
+
+  if [[ "${curr_word}" == -* ]]; then
+    COMPREPLY=( $(compgen -W "${flag_opts} ${arg_opts}" -- "${curr_word}") )
+  else
+    local positionals=""
+    local IFS=$'\n'
+    COMPREPLY=( $(compgen -W "${commands// /$'\n'}${IFS}${positionals}" -- "${curr_word}") )
+  fi
+}
+
+# Generates completions for the options and subcommands of the `--help` subcommand.
+function _picocli_neo4j-admin_backup_help() {
+  # Get completion data
+  local curr_word=${COMP_WORDS[COMP_CWORD]}
+
+  local commands=""
+  local flag_opts="-h --help"
   local arg_opts=""
 
   if [[ "${curr_word}" == -* ]]; then

@@ -1,3 +1,9 @@
+neo4j (5.26.1-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 5.26.1 version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 15 Jan 2025 18:16:12 +0200
+
 neo4j (5.23.0-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 5.23.0 version
